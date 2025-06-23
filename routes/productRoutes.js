@@ -70,6 +70,45 @@ router.get("/collections/big-sale", async (req, res) => {
     res.status(500).json({ message: "Lỗi server", error: error.message });
   }
 });
+//best seller 10 sản phẩm bán chạy nhất
+router.get("/collections/best-seller", async (req, res) => {
+  try {
+    const { page = 1, limit = 10 } = req.query;
+    const products = await Product.find()
+      .sort({ sold: -1 })
+      .limit(limit)
+      .skip((page - 1) * limit)
+      .populate("category subCategories brand");
+    const totalProducts = await Product.countDocuments();
+    const totalPages = Math.ceil(totalProducts / limit);
+    res.json({
+      products,
+      totalPages,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Lỗi server", error: error.message });
+  }
+});
+//new product 10 sản phẩm mới nhất
+router.get("/collections/new-product", async (req, res) => {
+  try {
+    const { page = 1, limit = 10 } = req.query;
+    const products = await Product.find()
+      .sort({ createdAt: -1 })
+      .limit(limit)
+      .skip((page - 1) * limit)
+      .populate("category subCategories brand");
+    const totalProducts = await Product.countDocuments();
+    const totalPages = Math.ceil(totalProducts / limit);
+    res.json({
+      products,
+      totalPages,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Lỗi server", error: error.message });
+  }
+});
+//lấy sản phẩm theo danh mục
 router.get("/collections/:category?", async (req, res) => {
   try {
     let baseQuery = {};

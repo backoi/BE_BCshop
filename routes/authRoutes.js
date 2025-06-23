@@ -100,7 +100,8 @@ router.post("/login", async (req, res) => {
         if (err) throw err;
         res.json({
           msg: "Đăng nhập thành công",
-          token,
+          token: token,
+          //role: user.role,
         });
       }
     );

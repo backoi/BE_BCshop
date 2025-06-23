@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
       paymentMethod,
       shipAddress,
     } = req.body.orderInfo;
-    //console.log("vao router order", req.body.orderInfo.shipAddress);
+    console.log("vao router order", paymentMethod);
     const newOrder = new Order({
       user: "682e1f7e4cee45344764afc7",
       items: cart.map((item) => ({
@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
         district: shipAddress.district,
         ward: shipAddress.ward,
         city: shipAddress.city,
-        phone: "0987654321",
+        phone: shipAddress.phone,
       },
       paymentMethod,
       paymentStatus: paymentMethod == "cash" ? "pending" : "completed",
@@ -56,14 +56,14 @@ router.post("/", async (req, res) => {
 // @route   GET api/orders
 // @desc    Get all orders
 // @access  Private
-router.get("/", authMiddleware, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     //const { limit = 4, page = 1 } = req.query;
     //console.log("limit", limit);
     //console.log("page", page);
     //const total = await Order.countDocuments({ user: req.user.id });
     //const orders = await Order.find({ user: req.user.id }).sort({ date: -1 });
-    const orders = await Order.find({ user: req.user.id })
+    const orders = await Order.find({ user: "6847ae28161a6b9005b519ee" })
       .sort({ date: -1 })
       .populate("items.product");
     //.skip((page - 1) * limit)

@@ -2410,12 +2410,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976a9",
+        product: "6858308572a6c02382feaa76",
         quantity: 1,
         price: 250000,
       },
       {
-        product: "6845c9e383bc5a610cf976b5",
+        product: "6858308572a6c02382feaa80",
         quantity: 2,
         price: 280000,
       },
@@ -2439,12 +2439,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976b3",
+        product: "6858308572a6c02382feaa7e",
         quantity: 1,
         price: 149000,
       },
       {
-        product: "6845c9e383bc5a610cf976b4",
+        product: "6858308572a6c02382feaa7f",
         quantity: 1,
         price: 290000,
       },
@@ -2468,22 +2468,22 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976cd",
+        product: "6858308572a6c02382feaa98",
         quantity: 2,
         price: 51000,
       },
       {
-        product: "6845c9e383bc5a610cf976cc",
+        product: "6858308572a6c02382feaa90",
         quantity: 1,
         price: 190000,
       },
       {
-        product: "6845c9e383bc5a610cf976ce",
+        product: "6858308572a6c02382feaa99",
         quantity: 1,
         price: 130000,
       },
       {
-        product: "6845c9e383bc5a610cf976cb",
+        product: "6858308572a6c02382feaa72",
         quantity: 2,
         price: 180000,
       },
@@ -2507,17 +2507,17 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976ca",
+        product: "6858308572a6c02382feaa95",
         quantity: 1,
         price: 80000,
       },
       {
-        product: "6845c9e383bc5a610cf976c9",
+        product: "6858308572a6c02382feaa94",
         quantity: 2,
         price: 160000,
       },
       {
-        product: "6845c9e383bc5a610cf976c8",
+        product: "6858308572a6c02382feaa93",
         quantity: 1,
         price: 119000,
       },
@@ -2541,12 +2541,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976c6",
+        product: "6858308572a6c02382feaa91",
         quantity: 2,
         price: 15000,
       },
       {
-        product: "6845c9e383bc5a610cf976c7",
+        product: "6858308572a6c02382feaa78",
         quantity: 2,
         price: 120000,
       },
@@ -2570,7 +2570,7 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976c5",
+        product: "6858308572a6c02382feaa90",
         quantity: 1,
         price: 190000,
       },
@@ -2594,18 +2594,18 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976c3",
+        product: "6858308572a6c02382feaa8b",
         quantity: 1,
         price: 290000,
       },
 
       {
-        product: "6845c9e383bc5a610cf976c4",
+        product: "6858308572a6c02382feaa7f",
         quantity: 1,
         price: 290000,
       },
       {
-        product: "6845c9e383bc5a610cf976c2",
+        product: "6858308572a6c02382feaa8d",
         quantity: 2,
         price: 219000,
       },
@@ -2629,12 +2629,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee",
     items: [
       {
-        product: "6845c9e383bc5a610cf976bf",
+        product: "6858308572a6c02382feaa8a",
         quantity: 1,
         price: 169000,
       },
       {
-        product: "6845c9e383bc5a610cf976be",
+        product: "6858308572a6c02382feaa89",
         quantity: 3,
         price: 30000,
       },
@@ -2659,7 +2659,7 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976bd",
+        product: "6858308572a6c02382feaa88",
         quantity: 1,
         price: 129000,
       },
@@ -2683,22 +2683,22 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976ba",
+        product: "6858308572a6c02382feaa85",
         quantity: 1,
         price: 20000,
       },
       {
-        product: "6845c9e383bc5a610cf976bb",
+        product: "6858308572a6c02382feaa86",
         quantity: 1,
         price: 249000,
       },
       {
-        product: "6845c9e383bc5a610cf976b9",
+        product: "6858308572a6c02382feaa84",
         quantity: 2,
         price: 49000,
       },
       {
-        product: "6845c9e383bc5a610cf976bc",
+        product: "6858308572a6c02382feaa87",
         quantity: 1,
         price: 209000,
       },
@@ -2722,12 +2722,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976b7",
+        product: "6858308572a6c02382feaa82",
         quantity: 1,
         price: 99000,
       },
       {
-        product: "6845c9e383bc5a610cf976b6",
+        product: "6858308572a6c02382feaa81",
         quantity: 2,
         price: 100000,
       },
@@ -2751,18 +2751,18 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976b5",
+        product: "6858308572a6c02382feaa80",
         quantity: 1,
         price: 280000,
       },
       {
-        product: "6845c9e383bc5a610cf976b4",
+        product: "6858308572a6c02382feaa7f",
         quantity: 1,
         price: 290000,
       },
 
       {
-        product: "6845c9e383bc5a610cf976a7",
+        product: "6858308572a6c02382feaa71",
         quantity: 3,
         price: 150000,
       },
@@ -2786,12 +2786,12 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976b3",
+        product: "6858308572a6c02382feaa7e",
         quantity: 1,
         price: 149000,
       },
       {
-        product: "6845c9e383bc5a610cf976b2",
+        product: "6858308572a6c02382feaa72",
         quantity: 1,
         price: 180000,
       },
@@ -2811,17 +2811,16 @@ const orderData = [
     paymentStatus: "completed", // pending, completed, failed, refunded
     notes: "giao vao chu nhat",
   },
-
   {
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976ae",
+        product: "6858308572a6c02382feaa73",
         quantity: 1,
         price: 250000,
       },
       {
-        product: "6845c9e383bc5a610cf976b1",
+        product: "6858308572a6c02382feaa7c",
         quantity: 3,
         price: 35000,
       },
@@ -2845,22 +2844,22 @@ const orderData = [
     user: "6847ae28161a6b9005b519ee", //backoi
     items: [
       {
-        product: "6845c9e383bc5a610cf976ac",
+        product: "6858308572a6c02382feaa77",
         quantity: 2,
         price: 25000,
       },
       {
-        product: "6845c9e383bc5a610cf976ab",
+        product: "6858308572a6c02382feaa73",
         quantity: 2,
         price: 250000,
       },
       {
-        product: "6845c9e383bc5a610cf976aa",
+        product: "6858308572a6c02382feaa75",
         quantity: 1,
         price: 259000,
       },
       {
-        product: "6845c9e383bc5a610cf976a9",
+        product: "6858308572a6c02382feaa73",
         quantity: 1,
         price: 250000,
       },
@@ -3039,9 +3038,10 @@ const seedData = async () => {
     // Xóa dữ liệu cũ
     await Category.deleteMany();
     await SubCategory.deleteMany();
-    await Product.deleteMany();
+    // await Product.deleteMany();
     await Post.deleteMany();
     await Brand.deleteMany();
+    await Order.deleteMany();
 
     // Thêm bài viết
     const posts = await Post.insertMany(postData);
@@ -3050,10 +3050,6 @@ const seedData = async () => {
     // Thêm hãng
     const brands = await Brand.insertMany(brandsData);
     console.log("✅ Hãng đã được chèn!");
-
-    //Thêm order
-    // const orders = await Order.insertMany(orderData);
-    // console.log("✅ Đơn hàng đã được chèn!");
 
     // Thêm danh mục chính
     const categories = await Category.insertMany(categoriesData);
@@ -3122,9 +3118,34 @@ const seedData = async () => {
         updatedAt: new Date(),
       };
     });
+    //Chuẩn bị dữ liệu order
+    const orderToInsert = orderData.map((order) => {
+      //console.log("order", order.paymentMethod);
+      //console.log("order", order.items);
+      return {
+        //orderInfo: {
+        user: order.user,
+        items: order.items.map((item) => ({
+          product: item.product,
+          quantity: item.quantity,
+          price: item.price,
+        })),
+        totalAmount: order.totalAmount,
+        shipAddress: order.shipAddress,
+        shipOption: order.shipOption,
+        status: order.status,
+        paymentMethod: order.paymentMethod,
+        paymentStatus: order.paymentStatus,
+        notes: order.notes,
+        //},
+      };
+    });
+    // console.log("orderToInsert", orderToInsert[0].items);
+    await Order.insertMany(orderToInsert);
+    console.log("✅ Đơn hàng đã được chèn!");
 
     // Thêm sản phẩm
-    await Product.insertMany(productsToInsert);
+    //await Product.insertMany(productsToInsert);
     console.log(`✅ ${productsToInsert.length} sản phẩm đã được chèn!`);
 
     process.exit();

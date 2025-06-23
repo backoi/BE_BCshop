@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const authMiddleware = require("../middleware/authMiddleware");
-const mongoose = require("mongoose");
+const Order = require("../models/Order");
 // const config = require('config');
 
 //test error
@@ -99,27 +97,35 @@ router.put("/me", authMiddleware, async (req, res) => {
 router.post("/address", async (req, res) => {
   try {
     const { city, district, ward, street, phone, isDefault, type } = req.body;
+    const newAddress = { type, city, district, ward, street, phone, isDefault };
     const user = await User.findById("6847ae28161a6b9005b519ee");
     if (!user) {
       return res.status(404).json({ msg: "User not found" });
     }
-    user.address.push({ type, city, district, ward, street, phone, isDefault });
+    user.address.push(newAddress);
+    //cap nhat luon
     await user.save();
-    res.status(200).json({ msg: "Address added", address: user.address });
+    res.status(200).json({
+      msg: "Address added",
+      address: user.address[user.address.length - 1],
+    });
   } catch (error) {
     res.status(500).json({ msg: error.message });
   }
 });
 //delete address
-router.delete("/address/:id", async (req, res) => {
+router.delete("/address/:id", authMiddleware, async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await User.findById("6847ae28161a6b9005b519ee");
+    const user = await User.findById(req.user.id);
     if (!user) {
       return res.status(404).json({ msg: "User not found" });
     }
-    user.address = user.address.filter((address) => address._id !== id);
+    user.address = user.address.filter(
+      (address) => address._id.toString() !== id
+    );
     await user.save();
+    //console.log("user", user);
     res.status(200).json({ msg: "Address deleted", user });
   } catch (error) {
     res.status(500).json({ msg: error.message });
@@ -161,6 +167,17 @@ router.put("/address/default/:id", async (req, res) => {
     //console.log("usernew", user);
     await user.save(null, { new: true });
     res.status(200).json({ msg: "Address updated", user });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+});
+//get orders
+router.get("/orders", authMiddleware, async (req, res) => {
+  try {
+    const orders = await Order.find({ user: req.user.id }).populate(
+      "items.product"
+    );
+    res.status(200).json(orders);
   } catch (error) {
     res.status(500).json({ msg: error.message });
   }
